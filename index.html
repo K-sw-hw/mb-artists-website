@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Homepage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <img
+          src="#"
+          alt="Logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        <span class="navbar-brand mb-0 h1">BM Artists</span>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Carousel -->
+
+      <div class="container position-relative">
+        <h1
+          class="position-absolute top-50 start-50 translate-middle z-3 text-white text-center"
+        >
+          Trova il tuo artista preferito e scopri le loro opere d'arte uniche.
+        </h1>
+
+        <div id="carouselDark" class="carousel carousel-light slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./src/dj_img.jpg" class="d-block w-100 card" style="object-fit: cover;" alt="Musica dal vivo" />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-white">Musica dal vivo e DJ set.</h5>
+                <p>[Descrizione]</p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="/src/photo_img.jpg" class="d-block w-100 card" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-white">Fotografia per eventi speciali</h5>
+                <p>Scopri il nostro lavoro fotografico per matrimoni, compleanni e altri eventi speciali.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="./src/microphone_img.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Corsi di vocal coaching</h5>
+                <p>Impara a migliorare il tuo sound con i nostri corsi di vocal coaching.</p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Precedente</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Successivo</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            <!-- SN photography profile card -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="#" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">SN Photography</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        onclick="window.location.href='pages/snphotography.html'"
+                      >
+                        Visualizza
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">#photography
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cristina Babysitting profile card -->
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="#" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Cristina Babysitting</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        onclick="window.location.href='pages/cristinababysitting.html'"
+                      >
+                        Visualizza
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">#wedding-nanny</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Daniela Fotografa di emozioni -->
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="#" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Daniela - fotografa di emozioni</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                        onclick="window.location.href='pages/danielafotografa.html'"
+                      >
+                        Visualizza
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">#photography</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DJ Mellow profile card -->
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./src/dj_mellow_img.jpeg" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">DJ Mellow</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Visualizza
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">#dj</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="#" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">[Testo]</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Visualizza
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">[Data]</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="#" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">[Testo]</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Visualizza
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">[Data]</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="#" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">[Testo]</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Visualizza
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">[Data]</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Torna su</a>
+        </p>
+        <p class="mb-1">[Nome del sito] &copy; 2026</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+# Dipendenze e moduli di Node
+node_modules/
+package-lock.json
+
+# File di configurazione dell'editor / sistema operativo
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Log e file temporanei
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

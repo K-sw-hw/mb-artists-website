@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Sweet Memory Artists</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Homepage</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,28 +16,16 @@
     <!-- Navbar -->
     <nav class="navbar sticky-top bg-primary" data-bs-theme="dark">
       <div class="container-fluid">
-        <img
-          src="#"
-          alt="Logo"
-          width="30"
-          height="24"
-          class="d-inline-block align-text-top"
-        />
-        <span class="navbar-brand mb-0 h1">MB Artists</span>
+        <a href="index.html" class="navbar-brand text-decoration-none text-white" style="font-family: sans-serif;">
+          Sweet Memory Artists
+        </a>
       </div>
     </nav>
 
     <main>
       <!-- Carousel -->
-
-      <div class="container position-relative">
-        <h1
-          class="position-absolute top-50 start-50 translate-middle z-3 text-white text-center"
-        >
-          Trova il tuo artista preferito e scopri le loro opere d'arte uniche.
-        </h1>
-
-        <div id="carouselDark" class="carousel carousel-light slide">
+      <div class="container position-relative my-4">
+        <div id="carouselDark" class="carousel carousel-light slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button
               type="button"
@@ -61,220 +49,184 @@
             ></button>
           </div>
 
-          <div class="carousel-inner">
+          <div class="carousel-inner rounded">
             <div class="carousel-item active" data-bs-interval="10000">
-              <img src="./src/dj_img.jpg" class="d-block w-100 card" style="object-fit: cover;" alt="Musica dal vivo" />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="text-white">Musica dal vivo e DJ set.</h5>
-                <p>[Descrizione]</p>
+              <img src="./src/dj_img.jpg" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Musica dal vivo" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                <h5 class="text-white">Musica dal vivo e DJ set</h5>
+                <p>Intrattenimento musicale per ogni tipo di evento.</p>
               </div>
             </div>
 
             <div class="carousel-item" data-bs-interval="10000">
-              <img src="./src/photo_img.jpg" class="d-block w-100 card" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
+              <img src="./src/photo_img.jpg" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Fotografia per eventi" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
                 <h5 class="text-white">Fotografia per eventi speciali</h5>
                 <p>Scopri il nostro lavoro fotografico per matrimoni e altri eventi speciali.</p>
               </div>
             </div>
 
             <div class="carousel-item" data-bs-interval="10000">
-              <img src="./src/microphone_img.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Corsi di vocal coaching</h5>
+              <img src="./src/microphone_img.jpg" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Vocal coaching" />
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                <h5 class="text-white">Corsi di vocal coaching</h5>
                 <p>Impara a migliorare il tuo sound con i nostri corsi di vocal coaching.</p>
               </div>
             </div>
           </div>
 
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselDark"
-            data-bs-slide="prev"
-          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Precedente</span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselDark"
-            data-bs-slide="next"
-          >
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Successivo</span>
           </button>
         </div>
       </div>
 
+      <!-- Sezione Artisti -->
       <div class="album py-5 bg-body-tertiary">
         <div class="container">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <h1 class="display-5 pb-4 mb-4 fst-italic border-bottom">Gli artisti</h1>
 
-            <!-- SN photography profile card -->
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="#" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">SN Photography</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                        onclick="window.location.href='pages/snphotography.html'"
-                      >
-                        Visualizza
-                      </button>
+          <!-- Nav Tabs -->
+          <ul class="nav nav-tabs mb-4" id="profileTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="acconciatura-tab" data-bs-toggle="tab" data-bs-target="#acconciatura" type="button" role="tab" aria-controls="acconciatura" aria-selected="true">Acconciatura e trucco</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="dj-tab" data-bs-toggle="tab" data-bs-target="#dj" type="button" role="tab" aria-controls="dj" aria-selected="false">DJ e animazione</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="decorazioni-tab" data-bs-toggle="tab" data-bs-target="#decorazioni" type="button" role="tab" aria-controls="decorazioni" aria-selected="false">Decorazioni</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="fotografia-tab" data-bs-toggle="tab" data-bs-target="#fotografia" type="button" role="tab" aria-controls="fotografia" aria-selected="false">Fotografia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="canto-tab" data-bs-toggle="tab" data-bs-target="#canto" type="button" role="tab" aria-controls="canto" aria-selected="false">Canto</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="grafica-tab" data-bs-toggle="tab" data-bs-target="#grafica" type="button" role="tab" aria-controls="grafica" aria-selected="false">Grafica</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="animazione-tab" data-bs-toggle="tab" data-bs-target="#animazione" type="button" role="tab" aria-controls="animazione" aria-selected="false">Animazione bimbi</button>
+            </li>
+          </ul>
+
+          <!-- Tab Contents -->
+          <div class="tab-content" id="profileContent">
+            
+            <!-- Acconciatura e Trucco -->
+            <div class="tab-pane fade show active" id="acconciatura" role="tabpanel" aria-labelledby="acconciatura-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm h-100">
+                    <img src="./src/placeholder.jpg" class="card-img-top" alt="Elena Trucco" />
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="card-text">Elena Trucco e Acconciature</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.location.href='pages/elena.html'">Visualizza</button>
+                        <small class="text-body-secondary">#makeup</small>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">#photography
-                    </small>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Cristina Babysitting profile card -->
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="#" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">Cristina Babysitting</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                        onclick="window.location.href='pages/cristinababysitting.html'"
-                      >
-                        Visualizza
-                      </button>
+            <!-- DJ e Animazione -->
+            <div class="tab-pane fade" id="dj" role="tabpanel" aria-labelledby="dj-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm h-100">
+                    <img src="./src/dj_mellow_img.jpeg" class="card-img-top" alt="DJ Mellow" />
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="card-text">DJ Mellow</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.location.href='pages/djmellow.html'">Visualizza</button>
+                        <small class="text-body-secondary">#dj</small>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">#wedding-nanny</small>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Daniela Fotografa di emozioni -->
+            <!-- Decorazioni -->
+            <div class="tab-pane fade" id="decorazioni" role="tabpanel" aria-labelledby="decorazioni-tab">
+              <p class="text-muted">Nessun artista al momento in questa categoria.</p>
+            </div>
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="#" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">Daniela - fotografa di emozioni</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                        onclick="window.location.href='pages/danielafotografa.html'"
-                      >
-                        Visualizza
-                      </button>
+            <!-- Fotografia -->
+            <div class="tab-pane fade" id="fotografia" role="tabpanel" aria-labelledby="fotografia-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm h-100">
+                    <img src="./src/placeholder.jpg" class="card-img-top" alt="SN Photography" />
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="card-text">SN Photography</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.location.href='pages/snphotography.html'">Visualizza</button>
+                        <small class="text-body-secondary">#photography</small>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">#photography</small>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm h-100">
+                    <img src="https://lh3.googleusercontent.com/d/1zJXxMJgkUq-HGRVRmIq1D5cHuR4AsRAW" class="card-img-top" alt="Daniela Fotografa" />
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="card-text">Daniela - fotografa di emozioni</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.location.href='pages/danielafotografa.html'">Visualizza</button>
+                        <small class="text-body-secondary">#photography</small>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- DJ Mellow profile card -->
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="./src/dj_mellow_img.jpeg" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">DJ Mellow</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Visualizza
-                      </button>
+            <!-- Canto -->
+            <div class="tab-pane fade" id="canto" role="tabpanel" aria-labelledby="canto-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm h-100">
+                    <img src="https://lh3.googleusercontent.com/d/1EDfmTA0MFA7zOiAmZkXBXbOJ1RKPaSdS" class="card-img-top" alt="Sandy Train Vocal Art" />
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="card-text">Sandy Train - Vocal Art</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.location.href='./pages/sandyvocalart.html'">Visualizza</button>
+                        <small class="text-body-secondary">#singer</small>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">#dj</small>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Sandy Train Vocal Art -->
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="https://lh3.googleusercontent.com/d/1EDfmTA0MFA7zOiAmZkXBXbOJ1RKPaSdS"alt="..." />
-                <div class="card-body">
-                  <p class="card-text">Sandy Train - Vocal Art</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                        onclick="window.location.href='./pages/sandyvocalart.html'"
-                      >
-                        Visualizza
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">#singer</small>
-                  </div>
-                </div>
-              </div>
+            <!-- Grafica -->
+            <div class="tab-pane fade" id="grafica" role="tabpanel" aria-labelledby="grafica-tab">
+              <p class="text-muted">Nessun artista al momento in questa categoria.</p>
             </div>
 
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="#" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">[Testo]</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Visualizza
-                      </button>
+            <!-- Animazione bimbi -->
+            <div class="tab-pane fade" id="animazione" role="tabpanel" aria-labelledby="animazione-tab">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm h-100">
+                    <img src="./src/placeholder.jpg" class="card-img-top" alt="Cristina Babysitting" />
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="card-text">Cristina Babysitting</p>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="window.location.href='pages/cristinababysitting.html'">Visualizza</button>
+                        <small class="text-body-secondary">#wedding-nanny</small>
+                      </div>
                     </div>
-                    <small class="text-body-secondary">[Data]</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <img src="#" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">[Testo]</p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="btn-group">
-                      <button
-                        type="button"
-                        class="btn btn-sm btn-outline-secondary"
-                      >
-                        Visualizza
-                      </button>
-                    </div>
-                    <small class="text-body-secondary">[Data]</small>
                   </div>
                 </div>
               </div>
@@ -285,12 +237,12 @@
       </div>
     </main>
 
-    <footer class="text-body-secondary py-5">
-      <div class="container">
-        <p class="float-end mb-1">
-          <a href="#">Torna su</a>
+    <footer class="text-body-secondary py-5 border-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p class="mb-0">Sweet Memory Artists &copy; 2026</p>
+        <p class="mb-0">
+          <a href="#" class="text-decoration-none">Torna su</a>
         </p>
-        <p class="mb-1">[Nome del sito] &copy; 2026</p>
       </div>
     </footer>
 
